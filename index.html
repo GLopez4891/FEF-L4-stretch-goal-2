@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Glenn Lopez</title>
+</head>
+
+<body>
+    <h1>Please enter your first and last name</h1>
+    <input id="test" type="text">
+    <button onclick="nameFormat()">Submit</button>
+
+    <script>
+        function nameFormat(userName) {
+            userName = document.getElementById("test").value; {
+                let regex = /^([A-Z][a-z]+)+$/;
+                if (userName.match(regex)) {
+                    alert('true');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
